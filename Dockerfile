@@ -10,6 +10,6 @@ FROM openjdk:8-jre-slim
 
 WORKDIR /app
 
-COPY --from=build /app/target/showcase-0.0.1-SNAPSHOT.jar /app/showcase-0.0.1-SNAPSHOT.jar
+COPY --from=build /app/target/ShowCase-0.0.1-SNAPSHOT.jar /app/ShowCase-0.0.1-SNAPSHOT.jar
 
-CMD ["java", "-jar", "showcase-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "ShowCase-0.0.1-SNAPSHOT.jar"]
